@@ -1,0 +1,24 @@
+{
+  "host": "0.0.0.0",
+  "http_port": 3000,
+  "ws_port": 3001,
+  "access_token": "",
+  "secret": "",
+  "post_message_format": "array",
+  "reverse_ws": [
+    {
+      "enabled": false,
+      "url": "ws://127.0.0.1:3001/onebot/v11/ws",
+      "reconnect_interval": 5000
+    }
+  ],
+  "heartbeat": {
+    "enabled": true,
+    "interval_ms": 15000
+  },
+  "agent": {
+    "enabled": true,
+    "max_context_turns": 15,
+    "max_context_tokens": 4096
+  }
+}

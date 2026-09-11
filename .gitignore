@@ -1,0 +1,61 @@
+# Build output and binaries
+bin/
+build/
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.obj
+
+# Logs and runtime data
+*.log
+*.bin
+bin/*.log
+
+# Temporary and diagnostic test scripts/artifacts
+tests/*.exe
+tests/*.dll
+tests/*.o
+tests/*.obj
+tests/*.zip
+tests/*.bin
+tests/test_*
+tests/patch_*
+tests/fix_*
+tests/make_*
+tests/run_patch*
+tests/clean_*
+tests/add_*
+tests/update_*
+tests/show_*
+tests/inspect_*
+tests/create_*
+tests/debug_*
+tests/diagnose_*
+tests/dump_*
+tests/parse_*
+
+# Third-party heavy binaries / downloads
+third_party/*.zip
+third_party/pmhq/
+third_party/*.dll
+third_party/*.node
+
+# Keep minhook static lib for easy building with MinGW
+!third_party/minhook/libminhook.a
+
+# IDE and Editor configs
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosv
+*.sln.docstates
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.BIN/
+.DS_Store
